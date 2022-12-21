@@ -89,6 +89,7 @@ const createEsbuildConfig = (
     external: getExternals(config),
     loader: loaders,
     bundle: true,
+    target: ["safari12"],
     logLevel: "silent",
     splitting: true,
     sourcemap: options.sourcemap,
